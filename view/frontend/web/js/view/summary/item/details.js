@@ -8,13 +8,13 @@ define([
     'escaper'
 ], function (Component, escaper) {
     'use strict';
-	var quoteItemData = window.checkoutConfig.quoteItemData;
+    var quoteItemData = window.checkoutConfig.quoteItemData;
     return Component.extend({
         defaults: {
             template: 'Magelearn_CartAttributes/summary/item/details',
             allowedTags: ['b', 'strong', 'i', 'em', 'u']
         },
-		quoteItemData: quoteItemData,
+        quoteItemData: quoteItemData,
         /**
          * @param {Object} quoteItem
          * @return {String}
